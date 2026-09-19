@@ -73,3 +73,50 @@
     padding: 2rem;
   }
 }
+
+/* Home Page Larger View */
+
+@media (min-width: 768px) {
+
+  .hero-content {
+    left: 4%;
+    bottom: 8%;
+    padding: 1.5rem;
+  }
+
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-content p {
+    font-size: 1.1rem;
+  }
+
+  #forecastContainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .spotlight-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+
+@media (min-width: 1024px) {
+
+  .hero-content {
+    left: 5%;
+    bottom: 10%;
+    max-width: 550px;
+  }
+
+  .hero-content h1 {
+    font-size: 2.6rem;
+  }
+
+  .spotlight-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+}

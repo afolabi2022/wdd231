@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Home | Liberia Chamber of Commerce</title>
+
+  <meta name="description"
+        content="The Liberia Chamber of Commerce connects, supports, and promotes businesses in Liberia. Discover local businesses, events, weather, and chamber opportunities.">
+
+  <meta name="author" content="Afolabi O. Emmanuel">
+
+
+  <meta property="og:title" content="Liberia Chamber of Commerce">
+  <meta property="og:description"
+        content="Connecting and supporting businesses in Liberia.">
+  <meta property="og:image"
+        content="https://afolabi2022.github.io/wdd231/chamber/images/hero.webp">
+  <meta property="og:url"
+        content="https://afolabi2022.github.io/wdd231/chamber/">
+  <meta property="og:type" content="website">
+
+  <link rel="icon" href="favicon.ico">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/home.js" defer></script>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="images/logo.webp"
+           alt="Liberia Chamber of Commerce logo"
+           width="50"
+           height="50">
+
+      <span>Liberia Chamber of Commerce</span>
+    </div>
+
+    <button id="menuButton" aria-label="Open menu">
+      ☰
+    </button>
+  </header>
+
+  <nav id="navigation">
+    <ul>
+      <li>
+        <a href="index.html" class="active">Home</a>
+      </li>
+
+      <li>
+        <a href="discover.html">Discover</a>
+      </li>
+
+      <li>
+        <a href="directory.html">Directory</a>
+      </li>
+
+      <li>
+        <a href="join.html">Join</a>
+      </li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <section class="hero">
+
+      <img src="images/hero.webp"
+           alt="Monrovia waterfront and business community in Liberia"
+           width="1599"
+           height="900">
+
+      <div class="hero-content">
+        <h1>Stronger Businesses. A Brighter Liberia.</h1>
+
+        <p>
+          Together we build a thriving business community
+          and a stronger local economy.
+        </p>
+
+        <a class="hero-button" href="join.html">
+          Join the Chamber
+        </a>
+      </div>
+
+    </section>
+
+
+
+    <section class="home-section events">
+
+      <h2>Current Events</h2>
+
+      <article class="event-card">
+        <h3>Business Networking Meeting</h3>
+
+        <p>
+          Connect with local business owners, entrepreneurs,
+          and professionals in the Monrovia business community.
+        </p>
+
+        <p>
+          <strong>Date:</strong> Saturday, October 10, 2026
+        </p>
+
+        <p>
+          <strong>Location:</strong> Monrovia, Liberia
+        </p>
+      </article>
+
+      <article class="event-card">
+        <h3>Small Business Development Workshop</h3>
+
+        <p>
+          Learn practical strategies for improving business
+          operations, marketing, and customer relationships.
+        </p>
+
+        <p>
+          <strong>Date:</strong> Saturday, October 24, 2026
+        </p>
+
+        <p>
+          <strong>Location:</strong> Monrovia, Liberia
+        </p>
+      </article>
+
+    </section>
+
+
+  
+    <section class="home-section weather">
+
+      <h2>Monrovia Weather</h2>
+
+      <div id="currentWeather">
+        <p>Loading current weather...</p>
+      </div>
+
+      <div id="forecast">
+
+        <h3>Three Day Forecast</h3>
+
+        <div id="forecastContainer">
+          <p>Loading forecast...</p>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <section class="home-section">
+
+      <h2>Business Spotlights</h2>
+
+      <div id="spotlights" class="spotlight-container">
+        <p>Loading business spotlights...</p>
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <footer>
+
+    <div class="footer-content">
+
+      <div class="footer-contact">
+
+        <p>
+          <strong>Liberia Chamber of Commerce</strong>
+        </p>
+
+        <p>
+          10 Broad Street<br>
+          Monrovia, Liberia
+        </p>
+
+        <p>
+          info@liberiachamber.org<br>
+          +231881518106
+        </p>
+
+      </div>
+
+
+      <div class="footer-social">
+
+        <a href="https://youtube.com"
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="YouTube">
+
+          <img src="images/youtube.svg"
+               alt="YouTube"
+               width="32"
+               height="32">
+
+        </a>
+
+
+        <a href="https://twitter.com"
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="Twitter">
+
+          <img src="images/twitter.png"
+               alt="Twitter"
+               width="32"
+               height="32">
+
+        </a>
+
+
+        <a href="https://linkedin.com"
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="LinkedIn">
+
+          <img src="images/linkedin.svg"
+               alt="LinkedIn"
+               width="32"
+               height="32">
+
+        </a>
+
+      </div>
+
+
+      <div class="footer-dev">
+
+        <p>WDD231 Class Project</p>
+
+        <p>Afolabi O. Emmanuel</p>
+
+        <p>
+          &copy;
+          <span id="currentYear"></span>
+          Liberia Chamber of Commerce
+        </p>
+
+        <p>
+          Last Modified:
+          <span id="lastModified"></span>
+        </p>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+</body>
+</html>
