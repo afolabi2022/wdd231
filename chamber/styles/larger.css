@@ -120,6 +120,9 @@
   }
 
 }
+.membership-form button[type="submit"]:hover {
+  background: #0f2342;
+}
 
 /* =========================
    JOIN PAGE LARGE VIEW
