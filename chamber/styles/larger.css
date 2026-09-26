@@ -120,3 +120,21 @@
   }
 
 }
+
+/* =========================
+   JOIN PAGE LARGE VIEW
+========================= */
+
+@media (min-width: 768px) {
+
+    .join-layout {
+        grid-template-columns: 2fr 1fr;
+        align-items: start;
+    }
+
+    .membership-levels {
+        position: sticky;
+        top: 1rem;
+    }
+
+}
