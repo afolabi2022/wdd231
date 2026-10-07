@@ -141,3 +141,46 @@
     }
 
 }
+/* =========================
+   DISCOVER PAGE MEDIUM VIEW
+========================= */
+
+@media (min-width: 641px) and (max-width: 1024px) {
+
+    .discover-grid {
+        grid-template-columns: repeat(2, 1fr);
+
+        grid-template-areas:
+            "card1 card2"
+            "card3 card4"
+            "card5 card6"
+            "card7 card8";
+    }
+
+}
+
+
+/* =========================
+   DISCOVER PAGE LARGE VIEW
+========================= */
+
+@media (min-width: 1025px) {
+
+    .discover-grid {
+        grid-template-columns: repeat(4, 1fr);
+
+        grid-template-areas:
+            "card1 card2 card3 card4"
+            "card5 card6 card7 card8";
+    }
+
+    .discover-card img {
+        transition: transform 0.3s ease, filter 0.3s ease;
+    }
+
+    .discover-card img:hover {
+        transform: scale(1.04);
+        filter: brightness(1.08);
+    }
+
+}

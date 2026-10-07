@@ -626,3 +626,107 @@ dialog li {
 .return-button:hover {
     background-color: #142d54;
 }
+
+/* =========================
+   DISCOVER PAGE
+========================= */
+
+.discover-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-areas:
+        "card1"
+        "card2"
+        "card3"
+        "card4"
+        "card5"
+        "card6"
+        "card7"
+        "card8";
+}
+
+.discover-card {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.discover-card:nth-child(1) {
+    grid-area: card1;
+}
+
+.discover-card:nth-child(2) {
+    grid-area: card2;
+}
+
+.discover-card:nth-child(3) {
+    grid-area: card3;
+}
+
+.discover-card:nth-child(4) {
+    grid-area: card4;
+}
+
+.discover-card:nth-child(5) {
+    grid-area: card5;
+}
+
+.discover-card:nth-child(6) {
+    grid-area: card6;
+}
+
+.discover-card:nth-child(7) {
+    grid-area: card7;
+}
+
+.discover-card:nth-child(8) {
+    grid-area: card8;
+}
+
+.discover-card h2 {
+    color: #1a3a6b;
+    margin-bottom: 0.75rem;
+}
+
+.discover-card figure {
+    margin: 0 0 1rem;
+}
+
+.discover-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    display: block;
+}
+
+.discover-card address {
+    font-style: normal;
+    font-weight: bold;
+    margin-bottom: 0.75rem;
+}
+
+.discover-card p {
+    margin-bottom: 1rem;
+}
+
+.discover-card button {
+    padding: 0.6rem 1rem;
+    background-color: #1a3a6b;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font: inherit;
+    cursor: pointer;
+}
+
+.visit-message {
+    background-color: #f4f7fa;
+    border-left: 5px solid #1a3a6b;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.visit-message p {
+    margin: 0;
+}
