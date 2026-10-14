@@ -1,0 +1,660 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-blue: #12355b;
+    --accent-green: #2e7d32;
+    --light-background: #f4f7fa;
+    --white: #ffffff;
+    --dark-text: #333333;
+    --border-color: #d8dee5;
+}
+
+body {
+    font-family: "Roboto", Arial, sans-serif;
+    color: var(--dark-text);
+    background-color: var(--white);
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    color: inherit;
+}
+
+.site-header {
+    background-color: var(--primary-blue);
+    color: var(--white);
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.site-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+}
+
+.logo-mark {
+    display: grid;
+    place-items: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 8px;
+    background-color: var(--white);
+    color: var(--primary-blue);
+    font-size: 0.8rem;
+}
+
+.logo-text {
+    font-size: 1.25rem;
+}
+
+.menu-button {
+    background: transparent;
+    border: 0;
+    color: var(--white);
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+.site-navigation {
+    display: none;
+    width: 100%;
+}
+
+.site-navigation.open {
+    display: block;
+}
+
+.site-navigation ul {
+    list-style: none;
+}
+
+.site-navigation a {
+    display: block;
+    padding: 0.75rem;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.site-navigation a:hover,
+.site-navigation a.active {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.hero {
+    background-color: var(--light-background);
+    padding: 4rem 1.2rem;
+}
+
+.hero-content {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.eyebrow,
+.section-label {
+    color: var(--accent-green);
+    font-weight: 700;
+    letter-spacing: 0.08rem;
+    font-size: 0.85rem;
+}
+
+.hero h1 {
+    max-width: 800px;
+    margin: 0.75rem 0 1rem;
+    color: var(--primary-blue);
+    font-family: "Poppins", sans-serif;
+    font-size: clamp(2.2rem, 7vw, 4.5rem);
+    line-height: 1.1;
+}
+
+.hero h1 span {
+    display: block;
+    color: var(--accent-green);
+}
+
+.hero-text {
+    max-width: 700px;
+    font-size: 1.1rem;
+}
+
+.hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.button {
+    display: inline-block;
+    padding: 0.8rem 1.3rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.primary-button {
+    background-color: var(--primary-blue);
+    color: var(--white);
+}
+
+.primary-button:hover {
+    background-color: var(--accent-green);
+}
+
+.secondary-button {
+    border: 2px solid var(--primary-blue);
+    color: var(--primary-blue);
+}
+
+.secondary-button:hover {
+    background-color: var(--primary-blue);
+    color: var(--white);
+}
+
+.intro-section,
+.featured-section,
+.cta-section {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 4rem 1.2rem;
+}
+
+.intro-section h2,
+.featured-section h2,
+.cta-section h2 {
+    color: var(--primary-blue);
+    font-family: "Poppins", sans-serif;
+    font-size: 2rem;
+    margin: 0.5rem 0 1rem;
+}
+
+.process-grid {
+    display: grid;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.process-card {
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1.5rem;
+    background-color: var(--white);
+}
+
+.process-number {
+    color: var(--accent-green);
+    font-weight: 700;
+}
+
+.process-card h3 {
+    color: var(--primary-blue);
+    font-family: "Poppins", sans-serif;
+    margin: 0.5rem 0;
+}
+
+.section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.text-link {
+    color: var(--primary-blue);
+    font-weight: 700;
+}
+
+.featured-grid {
+    display: grid;
+    gap: 1rem;
+}
+
+.cta-section {
+    background-color: var(--primary-blue);
+    color: var(--white);
+    max-width: none;
+    padding-left: max(1.2rem, calc((100% - 1100px) / 2));
+    padding-right: max(1.2rem, calc((100% - 1100px) / 2));
+}
+
+.cta-section h2 {
+    color: var(--white);
+}
+
+.cta-section .section-label {
+    color: #9be49f;
+}
+
+.cta-section .primary-button {
+    background-color: var(--white);
+    color: var(--primary-blue);
+    margin-top: 1.5rem;
+}
+
+.site-footer {
+    background-color: #0b2239;
+    color: var(--white);
+    padding: 2rem 1.2rem;
+}
+
+.footer-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    gap: 1.5rem;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.footer-links a,
+.footer-video a {
+    color: var(--white);
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+
+@media (min-width: 700px) {
+
+    .site-header {
+        padding: 1rem max(1.5rem, calc((100% - 1100px) / 2));
+    }
+
+    .menu-button {
+        display: none;
+    }
+
+    .site-navigation {
+        display: block;
+        width: auto;
+    }
+
+    .site-navigation ul {
+        display: flex;
+        gap: 0.5rem;
+    }
+
+    .site-navigation a {
+        padding: 0.6rem 1rem;
+    }
+
+    .process-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .featured-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .cta-section {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+
+    .cta-section .primary-button {
+        flex-shrink: 0;
+        margin-top: 0;
+    }
+
+    .footer-content {
+        grid-template-columns: 2fr 1fr 1fr;
+        align-items: start;
+    }
+}
+
+.page-intro {
+    background-color: var(--light-background);
+    padding: 3rem 1.2rem;
+    text-align: center;
+}
+
+.page-intro h1 {
+    color: var(--primary-blue);
+    font-family: "Poppins", sans-serif;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    margin: 0.5rem 0 1rem;
+}
+
+.page-intro > p:last-child {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.ideas-section {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 3rem 1.2rem;
+}
+
+.idea-controls {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+}
+
+.idea-controls select {
+    max-width: 100%;
+    padding: 0.65rem;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    background-color: var(--white);
+    color: var(--dark-text);
+    font: inherit;
+}
+
+@media (max-width: 400px) {
+    .section-heading {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
+
+.connect-section {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 3rem 1.2rem;
+    display: grid;
+    gap: 2rem;
+}
+
+#connectionForm {
+    display: grid;
+    gap: 0.75rem;
+}
+
+#connectionForm h2,
+.connect-note h2 {
+    color: var(--primary-blue);
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 0.5rem;
+}
+
+#connectionForm label {
+    font-weight: 700;
+    margin-top: 0.5rem;
+}
+
+#connectionForm input,
+#connectionForm select,
+#connectionForm textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    font: inherit;
+    color: var(--dark-text);
+    background-color: var(--white);
+}
+
+#connectionForm input:focus-visible,
+#connectionForm select:focus-visible,
+#connectionForm textarea:focus-visible {
+    outline: 3px solid var(--accent-green);
+    outline-offset: 2px;
+}
+
+#connectionForm button {
+    justify-self: start;
+    border: 0;
+    font: inherit;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.connect-note {
+    background-color: var(--light-background);
+    padding: 1.5rem;
+    border-radius: 8px;
+    align-self: start;
+}
+
+@media (min-width: 700px) {
+    .connect-section {
+        grid-template-columns: 3fr 2fr;
+        align-items: start;
+    }
+}
+
+.confirmation-section {
+    min-height: 60vh;
+    display: grid;
+    place-items: center;
+    padding: 3rem 1.2rem;
+    background-color: var(--light-background);
+}
+
+.confirmation-card {
+    width: 100%;
+    max-width: 700px;
+    padding: 2rem;
+    background-color: var(--white);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+}
+
+.confirmation-card h1 {
+    color: var(--primary-blue);
+    font-family: "Poppins", sans-serif;
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin: 0.5rem 0 1rem;
+}
+
+.confirmation-card > p {
+    margin-bottom: 1rem;
+}
+
+/* Ideas page card layout */
+#allIdeas {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    margin-top: 1.5rem;
+}
+
+#allIdeas .idea-card {
+    background-color: var(--white);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 3px 10px rgba(18, 53, 91, 0.06);
+    overflow-wrap: anywhere;
+}
+
+#allIdeas .idea-card h3 {
+    color: var(--primary-blue);
+    font-family: "Poppins", sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.4;
+    margin: 0.5rem 0;
+}
+
+#allIdeas .idea-card p {
+    margin-bottom: 0.65rem;
+}
+
+#allIdeas .idea-card .idea-category {
+    color: var(--accent-green);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.06rem;
+    text-transform: uppercase;
+}
+
+@media (min-width: 600px) {
+    #allIdeas {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 900px) {
+    #allIdeas {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+#ideaDialog {
+    width: min(90%, 600px);
+    max-height: 85vh;
+    margin: auto;
+    padding: 0;
+    border: 0;
+    border-radius: 12px;
+    color: var(--dark-text);
+    background-color: var(--white);
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.25);
+}
+
+#ideaDialog::backdrop {
+    background-color: rgba(11, 34, 57, 0.7);
+}
+
+.dialog-content {
+    position: relative;
+    padding: 2rem;
+}
+
+.dialog-content h2 {
+    color: var(--primary-blue);
+    font-family: "Poppins", sans-serif;
+    margin: 0.5rem 2rem 1rem 0;
+}
+
+.dialog-content > p {
+    margin-bottom: 0.8rem;
+}
+
+.dialog-close {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.8rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 0;
+    border-radius: 50%;
+    background-color: var(--light-background);
+    color: var(--primary-blue);
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+.dialog-close:focus-visible {
+    outline: 3px solid var(--accent-green);
+    outline-offset: 3px;
+}
+
+#dialogConnectLink {
+    margin-top: 1rem;
+}
+
+
+/* Homepage featured ideas */
+#featuredIdeas {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+#featuredIdeas .idea-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: var(--white);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 14px rgba(18, 53, 91, 0.08);
+    overflow-wrap: anywhere;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#featuredIdeas .idea-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 22px rgba(18, 53, 91, 0.14);
+}
+
+#featuredIdeas .idea-category {
+    display: inline-block;
+    color: var(--accent-green);
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.05rem;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+#featuredIdeas .idea-card h3 {
+    color: var(--primary-blue);
+    font-family: "Poppins", sans-serif;
+    font-size: 1.15rem;
+    line-height: 1.4;
+    margin: 0 0 0.75rem;
+}
+
+#featuredIdeas .idea-card p {
+    line-height: 1.6;
+    margin-bottom: 0.65rem;
+}
+
+#featuredIdeas .idea-card .text-link {
+    display: inline-block;
+    margin-top: auto;
+    padding: 0.65rem 1rem;
+    background-color: var(--primary-blue);
+    color: var(--white);
+    border-radius: 6px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+#featuredIdeas .idea-card .text-link:hover {
+    background-color: var(--accent-green);
+    color: var(--white);
+}
+
+#featuredIdeas .idea-card a:focus-visible {
+    outline: 3px solid var(--accent-green);
+    outline-offset: 3px;
+}
+
+@media (min-width: 600px) {
+    #featuredIdeas {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 900px) {
+    #featuredIdeas {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+

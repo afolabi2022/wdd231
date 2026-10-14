@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Explore Ideas | My IDS</title>
+    <meta
+        name="description"
+        content="Explore ideas, discover community solutions, and find ways to contribute your skills through My IDS."
+    >
+    <meta name="author" content="Afolabi O. Emmanuel">
+
+    <meta property="og:title" content="Explore Ideas | My IDS">
+    <meta
+        property="og:description"
+        content="Discover ideas and opportunities to contribute your skills."
+    >
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/ids-og.jpg">
+
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/main.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script type="module" src="scripts/ideas.js"></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <a class="site-logo" href="index.html">
+            <span class="logo-mark">IDS</span>
+            <span class="logo-text">My IDS</span>
+        </a>
+
+        <button
+            id="menuButton"
+            class="menu-button"
+            type="button"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+        >
+            ☰
+        </button>
+
+        <nav id="navigation" class="site-navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ideas.html" class="active" aria-current="page">Ideas</a></li>
+                <li><a href="connect.html">Connect</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-intro">
+            <p class="eyebrow">DISCOVER SOMETHING NEW</p>
+            <h1>Explore Ideas</h1>
+            <p>
+                Discover ideas, learn what they need, and find ways
+                your knowledge or skills could make a difference.
+            </p>
+        </section>
+
+        <section class="ideas-section" aria-labelledby="ideasHeading">
+            <div class="section-heading">
+                <h2 id="ideasHeading">Community Ideas</h2>
+                <p id="ideaCount" aria-live="polite">Loading ideas...</p>
+            </div>
+
+            <div class="idea-controls">
+                <label for="categoryFilter">Filter by category</label>
+                <select id="categoryFilter">
+                    <option value="all">All categories</option>
+                </select>
+            </div>
+
+            <div id="allIdeas" class="featured-grid">
+                <p>Loading ideas...</p>
+            </div>
+            
+<dialog id="ideaDialog" aria-labelledby="dialogTitle">
+    <div class="dialog-content">
+        <button
+            type="button"
+            id="closeDialog"
+            class="dialog-close"
+            aria-label="Close idea details"
+        >
+            &times;
+        </button>
+
+        <p id="dialogCategory" class="idea-category"></p>
+        <h2 id="dialogTitle"></h2>
+        <p id="dialogDescription"></p>
+        <p><strong>Stage:</strong> <span id="dialogStage"></span></p>
+        <p><strong>Location:</strong> <span id="dialogLocation"></span></p>
+        <p><strong>Skills needed:</strong> <span id="dialogNeed"></span></p>
+
+        <a id="dialogConnectLink" class="button primary-button" href="connect.html">
+            Explore Connecting
+        </a>
+    </div>
+</dialog>
+
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div>
+                <a class="site-logo footer-logo" href="index.html">
+                    <span class="logo-mark">IDS</span>
+                    <span class="logo-text">My IDS</span>
+                </a>
+                <p>Discover ideas. Build possibilities.</p>
+            </div>
+
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="ideas.html">Ideas</a>
+                <a href="connect.html">Connect</a>
+                <a href="attributions.html">Attributions</a>
+            </div>
+
+            <div class="footer-video">
+                
+    <a
+    href="https://youtu.be/fYGiJdvV3P0"
+    target="_blank"
+    rel="noopener noreferrer"
+    >
+    Project Demonstration Video
+    </a>
+
+            </div>
+        </div>
+
+        <p class="copyright">
+            &copy; <span id="currentYear"></span> My IDS | Afolabi O. Emmanuel
+        </p>
+    </footer>
+</body>
+</html>

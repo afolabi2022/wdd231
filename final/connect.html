@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Connect | My IDS</title>
+    <meta
+        name="description"
+        content="Use My IDS to express interest in an idea and explain how your skills could help develop it."
+    >
+    <meta name="author" content="Afolabi O. Emmanuel">
+
+    <meta property="og:title" content="Connect | My IDS">
+    <meta
+        property="og:description"
+        content="Discover ways to contribute your skills to an idea."
+    >
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/ids-og.jpg">
+
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/main.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script type="module" src="scripts/connect.js"></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <a class="site-logo" href="index.html">
+            <span class="logo-mark">IDS</span>
+            <span class="logo-text">My IDS</span>
+        </a>
+
+        <button
+            id="menuButton"
+            class="menu-button"
+            type="button"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+        >
+            ☰
+        </button>
+
+        <nav id="navigation" class="site-navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ideas.html">Ideas</a></li>
+                <li><a href="connect.html" class="active" aria-current="page">Connect</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-intro">
+            <p class="eyebrow">START A CONVERSATION</p>
+            <h1>Connect Through Ideas</h1>
+            <p>
+                Tell an idea owner why their idea interests you and
+                what knowledge, skills, or experience you could contribute.
+            </p>
+        </section>
+
+        <section class="connect-section">
+            <form id="connectionForm" action="thankyou.html" method="get">
+                <h2>Connection Request</h2>
+
+                <p>
+                    This demonstration form shows how a connection request
+                    could be submitted. It does not send a real message
+                    to an idea owner.
+                </p>
+
+                <label for="fullName">Full name</label>
+                <input
+                    type="text"
+                    id="fullName"
+                    name="fullName"
+                    autocomplete="name"
+                    required
+                >
+
+                <label for="email">Email address</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    autocomplete="email"
+                    required
+                >
+
+                <label for="selectedIdea">Idea you are interested in</label>
+                <select id="selectedIdea" name="selectedIdea" required>
+                    <option value="">Choose an idea</option>
+                </select>
+
+                <label for="contribution">How could you contribute?</label>
+                <textarea
+                    id="contribution"
+                    name="contribution"
+                    rows="5"
+                    minlength="20"
+                    maxlength="1000"
+                    required
+                ></textarea>
+
+                <button class="button primary-button" type="submit">
+                    Submit Request
+                </button>
+            </form>
+
+            <aside class="connect-note">
+                <h2>What happens next?</h2>
+                <p>
+                    In a complete IDS platform, the idea owner would review
+                    the request and decide whether to accept or decline it.
+                    This student project demonstrates the form only.
+                </p>
+            </aside>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div>
+                <a class="site-logo footer-logo" href="index.html">
+                    <span class="logo-mark">IDS</span>
+                    <span class="logo-text">My IDS</span>
+                </a>
+                <p>Discover ideas. Build possibilities.</p>
+            </div>
+
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="ideas.html">Ideas</a>
+                <a href="connect.html">Connect</a>
+                <a href="attributions.html">Attributions</a>
+            </div>
+
+            <div class="footer-video">
+                
+    <a
+    href="https://youtu.be/fYGiJdvV3P0"
+    target="_blank"
+    rel="noopener noreferrer"
+    >
+    Project Demonstration Video
+    </a>
+
+            </div>
+        </div>
+
+        <p class="copyright">
+            &copy; <span id="currentYear"></span> My IDS | Afolabi O. Emmanuel
+        </p>
+    </footer>
+</body>
+</html>

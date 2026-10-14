@@ -1,0 +1,138 @@
+
+[
+  {
+    "id": 1,
+    "title": "Community Learning Hub",
+    "category": "Education",
+    "stage": "Idea",
+    "description": "A community platform for practical learning resources, workshops, and peer support.",
+    "need": "Web developers and community educators",
+    "location": "Monrovia, Liberia"
+  },
+  {
+    "id": 2,
+    "title": "Local Business Directory",
+    "category": "Business",
+    "stage": "In Progress",
+    "description": "A digital directory that helps people discover local businesses and services.",
+    "need": "UI designers and business information",
+    "location": "Monrovia, Liberia"
+  },
+  {
+    "id": 3,
+    "title": "Farmers Market Connection",
+    "category": "Agriculture",
+    "stage": "Idea",
+    "description": "A platform that connects farmers with customers looking for locally produced food.",
+    "need": "Developers and agricultural knowledge",
+    "location": "Ganta, Liberia"
+  },
+  {
+    "id": 4,
+    "title": "Youth Skills Network",
+    "category": "Education",
+    "stage": "In Progress",
+    "description": "A network for young people to discover training opportunities and mentors.",
+    "need": "Mentors and educational content creators",
+    "location": "Monrovia, Liberia"
+  },
+  {
+    "id": 5,
+    "title": "Small Business Expense Tracker",
+    "category": "Technology",
+    "stage": "Idea",
+    "description": "A simple tool to help small business owners track daily expenses.",
+    "need": "JavaScript developers and accounting knowledge",
+    "location": "Paynesville, Liberia"
+  },
+  {
+    "id": 6,
+    "title": "Community Recycling Network",
+    "category": "Environment",
+    "stage": "Idea",
+    "description": "A community resource for finding recycling locations and reducing waste.",
+    "need": "Environmental researchers and volunteers",
+    "location": "Monrovia, Liberia"
+  },
+  {
+    "id": 7,
+    "title": "Local Tourism Guide",
+    "category": "Tourism",
+    "stage": "In Progress",
+    "description": "A digital guide to local attractions, cultural sites, and activities.",
+    "need": "Photographers and local tourism knowledge",
+    "location": "Monrovia, Liberia"
+  },
+  {
+    "id": 8,
+    "title": "Student Study Partner",
+    "category": "Education",
+    "stage": "Idea",
+    "description": "A service that helps students find study partners with similar learning goals.",
+    "need": "UX designers and student feedback",
+    "location": "Monrovia, Liberia"
+  },
+  {
+    "id": 9,
+    "title": "Health Information Finder",
+    "category": "Community",
+    "stage": "Idea",
+    "description": "A resource for finding general health information and available community services.",
+    "need": "Content researchers and reliable public information",
+    "location": "Liberia"
+  },
+  {
+    "id": 10,
+    "title": "Creative Skills Directory",
+    "category": "Creative",
+    "stage": "In Progress",
+    "description": "A directory for designers, photographers, writers, and other creative professionals.",
+    "need": "Creative professionals and web developers",
+    "location": "Monrovia, Liberia"
+  },
+  {
+    "id": 11,
+    "title": "Neighborhood Service Finder",
+    "category": "Community",
+    "stage": "Idea",
+    "description": "A platform for discovering useful services available in a local community.",
+    "need": "Local service information and developers",
+    "location": "Paynesville, Liberia"
+  },
+  {
+    "id": 12,
+    "title": "Digital Skills Practice Lab",
+    "category": "Technology",
+    "stage": "In Progress",
+    "description": "An online space where beginners can practice technology skills through small projects.",
+    "need": "Developers and technical mentors",
+    "location": "Liberia"
+  },
+  {
+    "id": 13,
+    "title": "Women Entrepreneurship Network",
+    "category": "Business",
+    "stage": "Idea",
+    "description": "A community for women entrepreneurs to share experiences and discover resources.",
+    "need": "Entrepreneurs and community organizers",
+    "location": "Monrovia, Liberia"
+  },
+  {
+    "id": 14,
+    "title": "Volunteer Opportunity Finder",
+    "category": "Community",
+    "stage": "Idea",
+    "description": "A platform for discovering volunteer opportunities based on personal interests and skills.",
+    "need": "Nonprofit organizations and volunteers",
+    "location": "Liberia"
+  },
+  {
+    "id": 15,
+    "title": "Local Transport Information Hub",
+    "category": "Transportation",
+    "stage": "Idea",
+    "description": "A resource to help people understand local transportation options and routes.",
+    "need": "Local transport knowledge and developers",
+    "location": "Monrovia, Liberia"
+  }
+]

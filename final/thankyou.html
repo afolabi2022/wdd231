@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Request Submitted | My IDS</title>
+    <meta
+        name="description"
+        content="Confirmation page for a My IDS connection request demonstration."
+    >
+    <meta name="author" content="Afolabi O. Emmanuel">
+    <meta property="og:title" content="Request Submitted | My IDS">
+    <meta
+    property="og:description"
+    content="Confirmation page for a My IDS connection request demonstration."
+    >
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/ids-og.jpg">
+
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/main.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script type="module" src="scripts/thankyou.js"></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <a class="site-logo" href="index.html">
+            <span class="logo-mark">IDS</span>
+            <span class="logo-text">My IDS</span>
+        </a>
+
+        <button
+            id="menuButton"
+            class="menu-button"
+            type="button"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+        >
+            ☰
+        </button>
+
+        <nav id="navigation" class="site-navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ideas.html">Ideas</a></li>
+                <li><a href="connect.html">Connect</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="confirmation-section">
+        <div class="confirmation-card">
+            <p class="eyebrow">THANK YOU</p>
+            <h1>Request Submitted</h1>
+
+            <p id="confirmationMessage" aria-live="polite">
+                Your demonstration request has been submitted.
+            </p>
+
+            <p>
+                This is a student project demonstration. Your information
+                has not been sent to an idea owner or stored on a server.
+            </p>
+
+            <div class="hero-actions">
+                <a class="button primary-button" href="ideas.html">
+                    Explore More Ideas
+                </a>
+
+                <a class="button secondary-button" href="index.html">
+                    Return Home
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div>
+                <a class="site-logo footer-logo" href="index.html">
+                    <span class="logo-mark">IDS</span>
+                    <span class="logo-text">My IDS</span>
+                </a>
+                <p>Discover ideas. Build possibilities.</p>
+            </div>
+
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="ideas.html">Ideas</a>
+                <a href="connect.html">Connect</a>
+                <a href="attributions.html">Attributions</a>
+            </div>
+
+            <div class="footer-video">
+               
+    <a
+    href="https://youtu.be/fYGiJdvV3P0"
+    target="_blank"
+    rel="noopener noreferrer"
+    >
+    Project Demonstration Video
+    </a>
+
+            </div>
+        </div>
+
+        <p class="copyright">
+            &copy; <span id="currentYear"></span> My IDS | Afolabi O. Emmanuel
+        </p>
+    </footer>
+</body>
+</html>
